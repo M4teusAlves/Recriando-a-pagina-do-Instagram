@@ -7,12 +7,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 main{
     padding-top: 2%;
     width: 60%;
-    height: 100%;
+    height: 75%;
     display: flex;
     justify-content: center;
 }
@@ -62,7 +63,7 @@ input[type="submit"]{
     background: #B2DFFC;
     width: 104%;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 b{
@@ -74,6 +75,23 @@ b{
 a{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: #385185;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 25%;
+    width: 70%;
+    gap:2%;
+}
+
+footer a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #8e8e8e;
 }
 
 /*ID's*/
@@ -96,6 +114,32 @@ a{
 
 #registration p{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#registration p a{
+    color:#0095f6;
+    font-weight: bold;
+}
+
+#download{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+}
+
+#download span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#download .shops{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 /*Classes*/
@@ -137,4 +181,32 @@ a{
 .lost-password{
     margin: 15px 0;
     font-size: 11px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width:1300px){
+    main{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:930px){
+    main{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:630px){
+    main{
+        width: 90%;
+    }
+
+    .cell{
+        display: none;
+    }
+
+    div{
+        width: 60%;
+    }
 }
